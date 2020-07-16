@@ -4,9 +4,7 @@ Tool/GUI for viewing and working with memory maps for iBoot
 Run with no arguments to trigger the interactive CLI menu
 
 ```
-memmap.py -h -x --soc=[soc] --model=[model] --target=[target] --value [variable] [variable2]...
------
-Ommiting soc/model or target will launch an interactive GUI where you can select them :)
+memmap.py -h -x -s [soc] -m [model] -t [target] -v [variable] [variable2]...
 -----
 -h - Print this menu and exit
 -x - Print nothing but the addresses, use for piping --value output elsewhere
@@ -14,6 +12,7 @@ Ommiting soc/model or target will launch an interactive GUI where you can select
 -m - Specify model (e.g. Watch2,3) instead of an SOC
 -t - Specify the targeted portion of iBoot (0=SecureRom, 1=LLB iBSS DFU, 2=iBoot iBEC)
 -v - Display only the variables after this argument
+----
 ```
 
 ## Examples
