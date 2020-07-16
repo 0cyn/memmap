@@ -233,6 +233,9 @@ def main(argv):
         global debug
         debug = True
 
+    if '-v' in argv:
+        vf = True
+
     if len(argv) > 1:
         narg = None 
         l = ''
@@ -373,6 +376,8 @@ def main(argv):
             else:
                 print("%s -> 0x%s" % (key, hex(memmap[key])[2:].zfill(memlen)))
         
+    if sparse:
+        print("")
 try:
     main(sys.argv)
 except Exception as ex:
