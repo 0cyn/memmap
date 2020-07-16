@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
+'''
+memmap.py
 
+Created 7/15/2020
+_kritanta
+'''
 import curses
 import sys
 import os
